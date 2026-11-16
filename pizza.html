@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Заказать пиццу · Четыре лофта</title>
+<style>
+:root{color-scheme:light;--ink:#20332e;--muted:#53635b;--paper:#f5f3ee;--line:#d6dcd5;--accent:#23634c}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 'Segoe UI',Arial,sans-serif}
+main{max-width:880px;margin:auto;padding:28px 20px 48px}h1,h2{font-family:Georgia,serif;font-weight:normal;line-height:1.15}h1{font-size:clamp(34px,7vw,50px);margin:18px 0}h2{font-size:27px;margin:0 0 12px}a{color:var(--accent)}
+section{background:white;border:1px solid var(--line);border-radius:8px;padding:clamp(14px,4vw,24px);margin:18px 0}.address{border-top:3px solid var(--accent)}.muted,small{color:var(--muted)}label{display:block;font-weight:600;margin-bottom:5px}
+select{font:inherit;color:inherit;border:1px solid var(--line);border-radius:5px;background:white;padding:8px;min-height:44px;max-width:100%}address{font-style:normal;margin:12px 0 4px}p{margin:8px 0}
+.services{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:16px}.services a{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:5px;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:clamp(13px,3vw,16px)}th,td{padding:8px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}td:last-child,th:last-child{text-align:right;white-space:nowrap}tbody th{font-weight:500}.analysis{background:#e9eee7;border-radius:6px;margin-top:16px;padding:12px 14px}
+
+:root{--ink:#272621;--muted:#706d64;--paper:#f4f0e7;--line:#ddd6c8;--accent:#a24329}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--paper);color:var(--ink)}
+header,main,footer{max-width:1380px;padding:32px 40px}header{align-items:center;border-bottom:1px solid var(--line);gap:24px}header h1{font:clamp(32px,4vw,54px)/1.06 Georgia,serif;letter-spacing:-.04em;margin:12px 0}header p{display:block!important;max-width:600px;font-size:15px}header .eyebrow{font-weight:700;color:var(--accent);font-size:11px;letter-spacing:.22em}header>a{flex-shrink:0;text-decoration:none;background:var(--ink);color:#fff;padding:13px 20px;border-radius:30px;font-size:14px}header small{font-size:12px}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}.venue{border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 20px #24221906;overflow:hidden;background:#fffdfa}.venue:hover{border-color:#b7aa95}.gallery{background:#e9e3d7}.gallery .photo,.photo{height:320px;object-fit:cover;width:100%}.gallery-open{overflow:hidden}.gallery-open img{transition:transform .3s}.gallery-open:hover img{transform:scale(1.025)}.gallery-nav{background:#fffdfa;padding:9px 18px;border-bottom:1px solid var(--line)}.gallery-nav button{border-radius:50%;min-width:44px;background:transparent;border-color:var(--line)}.gallery-count{font-size:12px;letter-spacing:.1em;color:var(--muted)}.body{padding:26px}.venue-title{gap:16px}h3{font:30px/1.15 Georgia,serif;letter-spacing:-.02em}.facts{font-size:14px;line-height:1.6;margin-top:12px;color:var(--muted)}.price{font:600 34px/1.2 'Segoe UI',sans-serif;letter-spacing:-.04em;color:var(--ink);margin:20px 0 4px!important}.per-person{background:#f0eadf;border-radius:10px;padding:14px 18px;margin-top:18px}.per-person strong{font-size:23px;color:var(--accent)}.quick-route{margin:16px 0!important;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px}.venue-details>summary{font-size:14px;letter-spacing:.02em;color:var(--accent)}.block{margin-top:22px;padding-top:18px}.label{font-size:11px;letter-spacing:.12em}li{font-size:15px;line-height:1.6}.venue-title .vote{border:1px solid #d9b3a4;border-radius:30px;padding:9px 14px;background:#f9eee8;color:var(--accent);font-size:13px;min-width:100px;max-width:150px}.venue-title .vote[aria-pressed=true]{background:var(--accent);color:white}.note{background:#eae4d8;border-radius:12px;padding:20px 26px;margin:24px 0}.budget{background:#fffdfa;border:1px solid var(--line);border-radius:14px;padding:26px;margin:24px 0;box-shadow:none}.budget h2,h2{font:27px/1.2 Georgia,serif}.controls{gap:18px;padding:24px 0}.controls label,.budget-fields label{font-size:13px;color:var(--muted)}select,input{border-radius:8px;min-height:46px;background:white;border-color:#cfc6b5}.budget-fields{gap:16px 24px}.budget-adjust button{border-radius:7px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d59976;outline-offset:3px}.summary article{border-top:1px solid var(--line)}footer{border-top:1px solid var(--line);color:var(--muted)}.call-note textarea{border-radius:8px;background:#fcfaf6}.contacts a{background:#f3eee5;text-decoration:none;border-radius:6px;padding:5px 10px}.vote-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#292c25;color:#eee9dc;padding:18px 24px;border-radius:12px;margin-bottom:28px;font-size:14px}.vote-banner a{color:#fff;background:#a24329;border-radius:24px;text-decoration:none;padding:10px 18px;white-space:nowrap}.pizza-link{border-radius:24px!important}dialog{border-radius:14px;box-shadow:0 24px 100px #0008}
+@media(min-width:1100px){.budget-fields input{width:150px}}@media(max-width:700px){header,main,footer{padding:22px 16px}header{align-items:start;flex-direction:column}header h1{font-size:38px}header>a{padding:10px 17px}.grid{grid-template-columns:1fr;gap:24px}.photo,.gallery .photo{height:250px}.body{padding:21px}h3{font-size:27px}.vote-banner{align-items:start;flex-direction:column;padding:18px}.budget{padding:20px}.budget-fields{gap:12px}.summary{grid-template-columns:1fr}.controls{gap:12px}.venue-title .vote{font-size:12px;max-width:125px;min-width:90px}.note{padding:18px}.budget-fields input{max-width:120px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+body{max-width:1100px;margin:auto;padding:28px}</style>
+</head>
+<body><main>
+<a href="./">← К сравнению лофтов</a>
+<h1>Заказать пиццу</h1>
+<section class="address" aria-labelledby="delivery-title">
+<h2 id="delivery-title">Куда доставить</h2>
+<label for="venue">Лофт</label>
+<select id="venue">
+<option value="Москва, улица Самокатная, 4, стр. 13">Кристалл</option>
+<option value="Москва, Нижняя Красносельская улица, 35, стр. 59">Панорамный</option>
+<option value="Москва, Берсеневский переулок, 5, стр. 4">ОПЕРА</option>
+<option value="Москва, Нижняя Красносельская улица, 35, стр. 59">OVERTONE</option>
+</select>
+<address id="address" aria-live="polite">Москва, улица Самокатная, 4, стр. 13</address>
+<p class="muted">Введите этот адрес в сервисе, чтобы проверить зону доставки, итоговую цену и время привоза.</p>
+<div class="services">
+<a href="https://dodopizza.ru/moscow" target="_blank" rel="noopener">Додо Пицца ↗</a>
+<a href="https://pizzasushiwok.ru/?from_city=1" target="_blank" rel="noopener">Пицца Суши Вок ↗</a>
+<a href="https://papajohns.ru/moscow" target="_blank" rel="noopener">Папа Джонс ↗</a>
+<a href="https://dominopizza.ru/msk/kombo/" target="_blank" rel="noopener">Domino Pizza ↗</a>
+<a href="https://zotmanpizza.ru/kombo-nabory" target="_blank" rel="noopener">Zotman Pizza ↗</a>
+</div>
+</section>
+<section aria-labelledby="combo-title">
+<h2 id="combo-title">Комбо на компанию</h2>
+<p class="muted">Цены московских меню на 15 ноября 2026, без доставки. Цена и состав могут зависеть от адреса и выбранных начинок.</p>
+<table aria-labelledby="combo-title">
+<thead><tr><th scope="col">Сервис и комбо</th><th scope="col">Цена набора</th><th scope="col">За пиццу</th></tr></thead>
+<tbody>
+<tr><th scope="row"><a href="https://dodopizza.ru/moscow" target="_blank" rel="noopener">Додо</a> · 3 пиццы, 30 или 35 см</th><td>от 1 455 ₽</td><td>от 485 ₽</td></tr>
+<tr><th scope="row">Додо · 5 пицц, 30 см</th><td>от 2 575 ₽</td><td>от 515 ₽</td></tr>
+<tr><th scope="row">Додо · 7 пицц</th><td>от 3 795 ₽</td><td>от 542 ₽</td></tr>
+<tr><th scope="row">Додо · 10 пицц</th><td>от 5 399 ₽</td><td>от 540 ₽</td></tr>
+<tr><th scope="row"><a href="https://pizzasushiwok.ru/?from_city=1" target="_blank" rel="noopener">Пицца Суши Вок</a> · 3 пиццы, 26 см</th><td>1 719 ₽</td><td>573 ₽</td></tr>
+<tr><th scope="row">Пицца Суши Вок · 6 пицц, 26 см</th><td>2 199 ₽</td><td>≈ 367 ₽</td></tr>
+<tr><th scope="row"><a href="https://papajohns.ru/moscow" target="_blank" rel="noopener">Папа Джонс</a> · «Сытный сет», 4 пиццы по 35 см</th><td>4 950 ₽</td><td>≈ 1 238 ₽</td></tr>
+<tr><th scope="row"><a href="https://dominopizza.ru/msk/kombo/" target="_blank" rel="noopener">Domino Pizza</a> · 5 больших пицц <small>«Скоро в продаже» в меню без адреса</small></th><td>от 2 991 ₽</td><td>от 598 ₽</td></tr>
+<tr><th scope="row">Domino Pizza · 10 больших пицц <small>«Скоро в продаже» в меню без адреса</small></th><td>от 5 847 ₽</td><td>от 585 ₽</td></tr>
+<tr><th scope="row"><a href="https://zotmanpizza.ru/kombo-nabory" target="_blank" rel="noopener">Zotman</a> · 5 римских пицц, 20 × 30 см</th><td>от 2 599 ₽</td><td>от 520 ₽</td></tr>
+<tr><th scope="row"><a href="https://zotmanpizza.ru/kombo-nabory/7-myasnykh-pitsts" target="_blank" rel="noopener">Zotman</a> · 7 мясных римских пицц, 20 × 30 см</th><td>от 4 999 ₽</td><td>от 714 ₽</td></tr>
+</tbody>
+</table>
+<div class="analysis">
+<p><strong>Что выгоднее для компании</strong></p>
+<p>У «Пицца Суши Вок» шесть пицц за 2 199 ₽ дают примерно столько же пиццы по площади, сколько пять по 30 см у «Додо» от 2 575 ₽. Разница по меню — 376 ₽.</p>
+<p>Если нужно ровно 10 пицц, два набора по пять у «Додо» стоят от 5 150 ₽. Это на 249 ₽ дешевле набора из десяти, если оба набора можно заказать по стартовой цене и подходят начинки и размеры.</p>
+<p>У Zotman пять римских пицц по площади сопоставимы с пятью круглыми по 30 см и стоят почти столько же: от 2 599 ₽ против 2 575 ₽ у «Додо». У Domino десять больших стоят на 135 ₽ меньше двух наборов по пять, если комбо появится в продаже по указанной цене.</p>
+</div>
+</section>
+</main><script>
+const venue = document.getElementById('venue');
+const address = document.getElementById('address');
+const updateAddress = () => { address.textContent = venue.value; };
+venue.addEventListener('change', updateAddress);
+updateAddress();
+</script></body></html>
