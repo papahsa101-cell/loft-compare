@@ -2,8 +2,8 @@
 window.EVENT_CONFIG = {
   "title": "ВЕЧЕР ЖИВОЙ МУЗЫКИ",
   "venue": "Лофт ОПЕРА",
-  "date": "Дата уточняется",
-  "gathering": "Уточняется",
+  "date": "27 ноября",
+    "gathering": "19:00",
   "musicStart": "Уточняется",
   "durationHours": 8,
   "estimatePerPerson": 3500,
